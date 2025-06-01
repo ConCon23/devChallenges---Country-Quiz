@@ -22,7 +22,7 @@ export const Congratulations = () => {
     return (
         <div className="bg-quiz-background m-5 rounded-xl max-w-[385px]">
             <div className="grid gap-8 text-center text-secondary-txt-clr px-9 pt-5 pb-[4em] font-medium">
-                <img src="../resources/congrats.png" alt="Congratulations"/>
+                <img src="/congrats.png" alt="Congratulations"/>
                 <p className="text-2xl">Congrats! You completed the quiz.</p>
                 <p className="text-[1em]">You answered {`${score}/${questions.length} Points`} correctly</p>
                 <button 
