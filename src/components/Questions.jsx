@@ -57,8 +57,8 @@ export const Questions = () => {
                     {data[selectedQuestion].options.map((option, oIndex) => {
                         let isCorrect = option === data[selectedQuestion].correctAnswer;
                         let isSelected = option === selectedOption;
-                        const checkIcon = "../resources/Check_round_fill.svg";
-                        const closeIcon = "../resources/Close_round_fill.svg";
+                        const checkIcon = "../public/Check_round_fill.svg";
+                        const closeIcon = "../public/Close_round_fill.svg";
                         return(                           
                                 <button 
                                     className={
