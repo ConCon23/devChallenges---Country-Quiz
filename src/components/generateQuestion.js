@@ -1,6 +1,7 @@
 import  Axios  from "axios"
 export const generateQuestion = async () => {
-    const countries =  await Axios.get("https://restcountries.com/v3.1/all").then(res => res.data);
+    const countries =  await Axios.get("https://restcountries.com/v3.1/all?fields=name,capital,region,population,currency,timezone,area
+").then(res => res.data);
     const selectedCountries = countries.sort(() => 0.5 - Math.random()).slice(0, 15)
     
     const questions = [
